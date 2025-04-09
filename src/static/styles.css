@@ -15,6 +15,8 @@ body {
   background-color: #f5f5f5;
 }
 
+/* Removed dark mode styles */
+
 header {
   text-align: center;
   padding: 20px 0;
@@ -32,14 +34,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
-}
+  justify-content: center; /* Add this line for proper alignment */
+} /* Missing closing brace added here */
 
 section {
   background-color: white;
@@ -72,6 +68,33 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #4caf50;
+}
+
+.activity-card ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-style: italic; /* Highlight participant names */
+}
+
+.activity-card div {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 5px;
+}
+
+.activity-card div strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #33691e;
 }
 
 .form-group {
